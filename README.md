@@ -23,7 +23,7 @@ g++ lru_cache.cpp -o lru.exe && lru.exe  # For Windows
 3️. Enter URLs to insert or access  
 
 ## Demo 
-![output](image.png)
+![output](output.png)
 
 ## Future Enhancements  
 🔹 Add GUI using Tkinter or PyQt  
