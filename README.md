@@ -1,16 +1,23 @@
 # LRU Cache Implementation  
 
 ## Introduction  
-This project implements an LRU (Least Recently Used) Cache using a Doubly Linked List and Hash Map in C++. It efficiently stores recently used URLs while evicting the least used ones when full.  
+This project implements an image processing cache using the Least Recently Used (LRU) technique. It utilizes a Doubly Linked List and a Hash Map in C++ to efficiently manage recently accessed images. The cache stores frequently used image URLs and automatically evicts the least recently used ones when full.
+The application is developed in C++ with OpenCV to optimize image processing by reducing redundant operations. This approach enhances performance by caching previously processed images, minimizing computation time, and improving overall efficiency.
 
 ## Features  
-✔️ O(1) Time Complexity for Insert & Access  
-✔️ Uses Doubly Linked List + Hash Map  
-✔️ Handles Cache Replacement Efficiently  
+1) Developed a C++ application using OpenCV for efficient image processing and avoiding redundant
+ processing using a LRU Cache(Least Recently Used) 
+2) Reduces 50% of image processing time using caching technique having O(1) lookup time for
+ already processed images  
+3) Integrated with OpenCV for real time image processing(greyscale conversion). Additional
+ processing features such as edge detection, various types of filters can be added as future
+ additions to the application.  
 
 ## Technologies Used  
 - C++  
-- Data Structures (HashMap, Doubly Linked List)  
+- Data Structures (HashMap, Doubly Linked List)
+- OpenCV
+- Image Processing
 
 ## How to Run  
 1️. Clone the repo: 
