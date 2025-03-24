@@ -1,4 +1,4 @@
-# LRU Cache Implementation  
+# Image Processing Cache implemented using LRU  
 
 ## Introduction  
 This project implements an image processing cache using the Least Recently Used (LRU) technique. It utilizes a Doubly Linked List and a Hash Map in C++ to efficiently manage recently accessed images. The cache stores frequently used image URLs and automatically evicts the least recently used ones when full.
