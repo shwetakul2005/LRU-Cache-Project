@@ -19,19 +19,6 @@ The application is developed in C++ with OpenCV to optimize image processing by 
 - OpenCV
 - Image Processing
 
-## How to Run  
-1️. Clone the repo: 
-https://github.com/shwetakul2005/LRU-Cache-Project.git 
-
-2️. Compile & Run:  
-g++ lru_cache.cpp -o lru && ./lru  # For Linux/Mac
-g++ lru_cache.cpp -o lru.exe && lru.exe  # For Windows
-
-3️. Enter URLs to insert or access  
-
-## Demo 
-![output](output.png)
-
 ## Future Enhancements  
 🔹 Add GUI using Tkinter or PyQt  
 🔹 Implement a Web API using Flask  
