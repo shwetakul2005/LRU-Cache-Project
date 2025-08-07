@@ -2,6 +2,7 @@
 #include <map>
 #include <unordered_map>
 #include <string>
+#include <fstream>
 using namespace std;
 
 class Node{
@@ -105,23 +106,30 @@ public:
 };
 
 int main(){
-std::string u = "google";
-std::string u1 = "googl";
-std::string u2 = "goog";
-std::string u3 = "goo";
-std::string u4 = "goog";
-std::string u5 = "youtube";
+// std::string u = "google";
+// std::string u1 = "googl";
+// std::string u2 = "goog";
+// std::string u3 = "goo";
+// std::string u4 = "goog";
+// std::string u5 = "youtube";
+// LRU obj1;
+// obj1.put_url(u);  // Works fine
+// obj1.put_url(u1);  // Works fine
+// obj1.put_url(u2);  // Works fine
+// obj1.put_url(u3);  // Works fine
+// obj1.put_url(u4);  // Works fine
+// obj1.put_url(u5);  // Works fine
+// // cout<<"enter ur url"<<endl;
+// // cin>>url1;
+// cout<<"input res: "<<obj1.get_url(u)<<endl;
+// cout<<"input res: "<<obj1.get_url(u4);
+cout<<"enter file path"<<endl;
+string path;
+cin>>path;
 LRU obj1;
-obj1.put_url(u);  // Works fine
-obj1.put_url(u1);  // Works fine
-obj1.put_url(u2);  // Works fine
-obj1.put_url(u3);  // Works fine
-obj1.put_url(u4);  // Works fine
-obj1.put_url(u5);  // Works fine
-// cout<<"enter ur url"<<endl;
-// cin>>url1;
-cout<<"input res: "<<obj1.get_url(u)<<endl;
-cout<<"input res: "<<obj1.get_url(u4);
+obj1.put_url(path);
+
+
 
 
 return 0;
