@@ -1,11 +1,11 @@
-#SwiftOpen
+🚀 SwiftOpen
 
 A lightning-fast, cross-platform recent file launcher powered by LRU Cache.
 
 SwiftOpen is a command-line utility that keeps track of your most recently opened files, folders, or URLs, and lets you launch them instantly.
 It uses an LRU (Least Recently Used) cache under the hood to ensure your top-used items are always at your fingertips — and the oldest ones get kicked out automatically.
 
-##Features
+✨ Features
 
 LRU Cache Implementation using:
 
@@ -35,24 +35,24 @@ Quit
 
 Capacity Limit: Stores the last 10 entries by default
 
-##Project Structure
+📂 Project Structure
 .
 ├── main.cpp        # Source code
 ├── recent.txt      # Stores recent entries
 └── README.md       # Documentation
 
-##Installation & Usage
-1️) Compile
+⚙️ Installation & Usage
+1️⃣ Compile
 g++ main.cpp -o swiftopen
 
-2) Run
+2️⃣ Run
 ./swiftopen
 
 
 Make sure recent.txt is in the same directory as the executable.
 If it doesn't exist, SwiftOpen will create it automatically.
 
-##Example Run
+🖥️ Example Run
 
 Startup List:
 
@@ -69,7 +69,7 @@ enter number from the list: 2
 yayy!!!
 Opening: /home/user/Projects/code.cpp
 
-##How It Works
+🛠️ How It Works
 
 On startup, SwiftOpen reads recent.txt and loads entries into an LRU cache.
 
@@ -81,7 +81,7 @@ When a new item is added and the cache is full, the least recently used entry is
 
 Actions (launch, new, delete) update both the cache and recent.txt.
 
-##Cross-platform Launch Commands
+📦 Cross-platform Launch Commands
 
 SwiftOpen uses platform-specific commands to open files:
 
