@@ -1,26 +1,92 @@
-# Image Processing Cache implemented using LRU  
+#SwiftOpen
 
-## Introduction  
-This project implements an image processing cache using the Least Recently Used (LRU) technique. It utilizes a Doubly Linked List and a Hash Map in C++ to efficiently manage recently accessed images. The cache stores frequently used image URLs and automatically evicts the least recently used ones when full.
-The application is developed in C++ with OpenCV to optimize image processing by reducing redundant operations. This approach enhances performance by caching previously processed images, minimizing computation time, and improving overall efficiency.
+A lightning-fast, cross-platform recent file launcher powered by LRU Cache.
 
-## Features  
-1) Developed a C++ application using OpenCV for efficient image processing and avoiding redundant
- processing using a LRU Cache(Least Recently Used) 
-2) Reduces 50% of image processing time using caching technique having O(1) lookup time for
- already processed images  
-3) Integrated with OpenCV for real time image processing(greyscale conversion). Additional
- processing features such as edge detection, various types of filters can be added as future
- additions to the application.  
+SwiftOpen is a command-line utility that keeps track of your most recently opened files, folders, or URLs, and lets you launch them instantly.
+It uses an LRU (Least Recently Used) cache under the hood to ensure your top-used items are always at your fingertips — and the oldest ones get kicked out automatically.
 
-## Technologies Used  
-- C++  
-- Data Structures (HashMap, Doubly Linked List)
-- OpenCV
-- Image Processing
+##Features
 
-## Future Enhancements  
-🔹 Add GUI using Tkinter or PyQt  
-🔹 Implement a Web API using Flask  
+LRU Cache Implementation using:
+
+Doubly Linked List for ordering
+
+unordered_map for O(1) lookups
+
+Persistent Storage in recent.txt between program runs
+
+Cross-platform launching support:
+
+Windows (start)
+
+macOS (open)
+
+Linux (xdg-open)
+
+Interactive Menu:
+
+Launch a recent file/URL
+
+Add a new entry
+
+Delete an entry
+
+Quit
+
+Capacity Limit: Stores the last 10 entries by default
+
+##Project Structure
+.
+├── main.cpp        # Source code
+├── recent.txt      # Stores recent entries
+└── README.md       # Documentation
+
+##Installation & Usage
+1️) Compile
+g++ main.cpp -o swiftopen
+
+2) Run
+./swiftopen
 
 
+Make sure recent.txt is in the same directory as the executable.
+If it doesn't exist, SwiftOpen will create it automatically.
+
+##Example Run
+
+Startup List:
+
+1. /home/user/Documents/report.pdf
+2. /home/user/Projects/code.cpp
+3. https://example.com
+Enter 'l' to launch or 'n' for new path or 'd' to delete or 'q' to quit:
+
+
+Launching an Entry:
+
+Enter 'l' to launch...
+enter number from the list: 2
+yayy!!!
+Opening: /home/user/Projects/code.cpp
+
+##How It Works
+
+On startup, SwiftOpen reads recent.txt and loads entries into an LRU cache.
+
+Entries are stored in a Doubly Linked List for quick ordering.
+
+A Hash Map ensures instant lookup and movement of items.
+
+When a new item is added and the cache is full, the least recently used entry is removed.
+
+Actions (launch, new, delete) update both the cache and recent.txt.
+
+##Cross-platform Launch Commands
+
+SwiftOpen uses platform-specific commands to open files:
+
+Windows: start "" "path"
+
+macOS: open "path"
+
+Linux: xdg-open "path"
